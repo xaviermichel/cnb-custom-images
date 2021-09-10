@@ -1,0 +1,6 @@
+FROM paketobuildpacks/run:base-cnb
+
+USER root
+RUN apt update && apt install -y git
+
+USER cnb
